@@ -1,0 +1,104 @@
+/* Import the ShadePro Black font */
+@import url('https://fonts.googleapis.com/css2?family=ShadePro:wght@900&display=swap');
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ShadePro', sans-serif;
+    background-color: #F4F7FA;
+    color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #F4F7FA; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333333; /* Dark text color */
+    letter-spacing: 1px;
+}
+
+/* Hide checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Toggle button for mobile menu */
+.toggle-button {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: #333333; /* Dark text color */
+}
+
+/* Nav links styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a {
+    color: #333333; /* Dark text color */
+    text-decoration: none;
+    padding: 8px 20px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+/* Hover effect for nav links */
+.nav-links li a:hover {
+    background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px; /* Adjusted for fixed navbar */
+        left: 0;
+        width: 100%;
+        background: #F4F7FA;
+        padding: 15px 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .toggle-checkbox:checked + .toggle-button + .nav-links {
+        display: flex;
+    }
+}
