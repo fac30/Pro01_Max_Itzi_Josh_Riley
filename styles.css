@@ -32,11 +32,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+
   background-color: var(--background-light);
+
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000;
+
 }
 
 .header-content {
@@ -46,6 +49,7 @@ body {
 
 
 .header-title {
+
   padding: 15px 20px;
   font-size: 5em;
   position: relative;
@@ -55,7 +59,12 @@ body {
 
 .red-text {
   color: var(--red-titles)
+
+  background-color: #f4f7fa;
+  padding: 15px 20px;
+  font-size: 4em;
 }
+
 
 .logo {
   font-size: 24px;
@@ -108,12 +117,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.events-grid {
+.events-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: auto;
+  margin: 2rem;
 }
 
 .events-card {
@@ -122,7 +132,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.3rem;
   justify-content: center;
   align-items: center;
   max-width: 350px;
@@ -132,10 +142,23 @@ body {
   border-radius: 8px;
 }
 
+.events-card p {
+  margin: 0.5rem auto;
+}
+
 .events-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.events-card a {
+  /* text-decoration: none; */
+  color: var(--red-titles);
+}
+
+.events-card a:hover {
+  text-decoration: none;
 }
 
 .events-button {
@@ -153,7 +176,6 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
 
 .contact-us {
   border: solid black;
