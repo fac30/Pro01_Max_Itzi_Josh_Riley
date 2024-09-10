@@ -1,5 +1,5 @@
 [{
-    "id": 24001,
+    "id": "EVNT-001",
     "img": "https://preview.redd.it/bill-gates-installing-windows-v0-tcmw5057mjuc1.jpeg?width=640&crop=smart&auto=webp&s=75f0f11bffaad1b50a2474a19c62fe1b174cf1d8",
     "title": "How to excel at building and installing windows",
     "speaker": "Bill Gates",
@@ -9,7 +9,7 @@
     "description": "Come and join us for a very special talk by window industry leading expert Bill Gates to kick off the automn season at Brainwave."
 },
 {
-    "id": 24002,
+    "id": "EVNT-002",
     "img": "https://www.nowarsenal.com/wp-content/uploads/2024/07/Mikel-Arteta-3.webp",
     "title": "How to manage a football team like a boss",
     "speaker": "Mikel Arteta",
@@ -19,7 +19,7 @@
     "description": "Come and join the don of all football managers Mikel Arteta, talking to us about... Football!"
 },
 {
-    "id": 24003,
+    "id": "EVNT-003",
     "img": "https://images.squarespace-cdn.com/content/v1/622a29b86b75a406bab3bec4/1663639177301-TQXMI277VW6DM54WM5LP/Screen+Shot+2022-09-19+at+8.49.12+PM.png",
     "title": "How to write amazing stories for graphic novels and movies",
     "speaker": "Alan Moore",
@@ -29,7 +29,7 @@
     "description": "Come and join us for a very exciting talk by industry guru Alan Moore who will tell us more about his writing methods."
 },
 {
-    "id": 24004,
+    "id": "EVNT-004",
     "img": "https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2Fc4b945cc-b215-11e7-a398-73d59db9e399?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1",
     "title": "How to make tech accessible to all",
     "speaker": "Dan Sofer",
@@ -39,7 +39,7 @@
     "description": "Come and join the founder of computing school Founders & Coders to learn more about his approach to making the tech industry more inclusive and diverse."
 },
 {
-    "id": 24005,
+    "id": "EVNT-005",
     "img": "https://compote.slate.com/images/a04a94ba-598f-4f31-bee6-41eb6884f3ca.jpeg?width=780&height=520&rect=4500x3000&offset=0x0",
     "title": "How to build an ethical tech company",
     "speaker": "Mark Zuckerberg",
@@ -49,7 +49,7 @@
     "description": "Come and join the godfather of social media talk about how string ethics and morals should be at the centre of every business venture in tech."
 },
 {
-    "id": 24006,
+    "id": "EVNT-006",
     "img": "https://fox59.com/wp-content/uploads/sites/21/2024/03/65f3c58ebf96f3.92298232.jpeg?strip=1",
     "title": "How to compose music that resonates",
     "speaker": "Hans Zimmer",
