@@ -1,16 +1,29 @@
 /* Import the ShadePro Black font */
-@import url('https://fonts.googleapis.com/css2?family=ShadePro:wght@900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=ShadePro:wght@900&display=swap");
 
 /* Reset default browser styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-color: #adbae3;
+  --lilac-color: #c8d1ef;
+  --beige-color: #e0d2a9;
+  --red-titles: #b80003;
+
+  --background-light: #f4f7fa;
+  --background-white: #fff;
+
+  --font-colour: #161c2d;
 }
 
 body {
-    font-family: 'ShadePro', sans-serif;
-    color: #333;
+  font-family: "ShadePro", sans-serif;
+  background-color: var(--background-white);
+  color: var(--font-colour);
 }
 
 /* Navbar styling */
@@ -37,48 +50,89 @@ body {
 }
 
 .logo {
-    font-size: 1em;
-    font-weight: bold;
-    color: #333333; /* Dark text color */
-    letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333333; /* Dark text color */
+  letter-spacing: 1px;
 }
 
 /* Hide checkbox */
 .toggle-checkbox {
-    display: none;
+  display: none;
 }
 
 /* Toggle button for mobile menu */
 .toggle-button {
-    display: none;
-    font-size: 1.8em;
-    cursor: pointer;
-    color: #333333; /* Dark text color */
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: #333333; /* Dark text color */
 }
 
 /* Nav links styling */
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    transition: all 0.3s ease;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  transition: all 0.3s ease;
 }
 
 .nav-links li a {
-    color: #333333; /* Dark text color */
-    text-decoration: none;
-    padding: 8px 20px;
-    font-size: 1.1em;
-    border-radius: 20px;
-    transition: background-color 0.3s, transform 0.3s;
-    position: relative;
+  color: #333333; /* Dark text color */
+  text-decoration: none;
+  padding: 8px 20px;
+  font-size: 1.1em;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  position: relative;
 }
 
 /* Hover effect for nav links */
 .nav-links li a:hover {
-    background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  max-width: auto;
+}
+
+.events-card {
+  background-color: var(--lilac-color);
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  text-align: center;
+
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.events-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.events-button {
+  background-color: var(--background-white);
+  color: var(--font-colour);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 25px;
+  min-width: 100px;
+  margin-top: 0.5rem;
 }
 
 .contact-header{
@@ -141,30 +195,30 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .toggle-button {
-        display: block;
-    }
+  .toggle-button {
+    display: block;
+  }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 60px; /* Adjusted for fixed navbar */
-        left: 0;
-        width: 100%;
-        background: #F4F7FA;
-        padding: 15px 0;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjusted for fixed navbar */
+    left: 0;
+    width: 100%;
+    background: #f4f7fa;
+    padding: 15px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
 
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-    }
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 
-    .toggle-checkbox:checked + .toggle-button + .nav-links {
-        display: flex;
-    }
+  .toggle-checkbox:checked + .toggle-button + .nav-links {
+    display: flex;
+  }
 }
