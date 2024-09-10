@@ -28,32 +28,42 @@ body {
 
 /* Navbar styling */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #F4F7FA; /* Light background color */
-    position: sticky;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--background-light);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
+.header-content {
+  background-color: var(--background-light);
+  height: 701px;
+}
+
+
 .header-title {
-    background-color: #F4F7FA;
-    padding: 15px 20px;
-    font-size: 4em;
+  padding: 15px 20px;
+  font-size: 5em;
+  position: relative;
+  left: 17%;
+  top: 153px;
 }
 
 .red-text {
-    color: #E00400;
+  color: var(--red-titles)
 }
 
 .logo {
-  font-size: 1em;
+  font-size: 24px;
   font-weight: bold;
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
   letter-spacing: 1px;
+  margin-left: 10%;
 }
 
 /* Hide checkbox */
@@ -66,7 +76,8 @@ body {
   display: none;
   font-size: 1.8em;
   cursor: pointer;
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
 }
 
 /* Nav links styling */
@@ -75,10 +86,12 @@ body {
   display: flex;
   gap: 25px;
   transition: all 0.3s ease;
+  margin-right: 10%;
 }
 
 .nav-links li a {
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
   text-decoration: none;
   padding: 8px 20px;
   font-size: 1.1em;
@@ -89,7 +102,8 @@ body {
 
 /* Hover effect for nav links */
 .nav-links li a:hover {
-  background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
+  background-color: rgba(51, 51, 51, 0.1);
+  /* Subtle hover effect */
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -135,66 +149,79 @@ body {
   margin-top: 0.5rem;
 }
 
-.contact-header{
-    text-align: center;
-    margin-bottom: 50px;
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.contact-form{
-    
-}
-.contact-us{
-    border: solid black;
-    max-width: 320px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    padding: 20px;
+
+.contact-us {
+  border: solid black;
+  max-width: 320px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 20px;
 }
 
-.contact-us input, #reason{
-    width: 272px;
-    height: 40px;
+.contact-us input,
+#reason {
+  width: 272px;
+  height: 40px;
 }
 
-#more-info{
-    width: 272px;
-    height: 100px;
+#more-info {
+  width: 272px;
+  height: 100px;
 }
 
-.submit-contact{
-    border: none;
-    border-radius: 5px;
+.submit-contact {
+  border: none;
+  border-radius: 5px;
 }
 
-.newsletter{
-    text-align: center;
+.newsletter {
+  text-align: center;
 }
 
-.newsletter-form{
-    width: 502px;
-    height: 273px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    height: 100px;
+.newsletter-form {
+  width: 502px;
+  height: 273px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
 
-#newsletter-input{
-    width: 500px;
-    height: 54px;
+#newsletter-input {
+  width: 500px;
+  height: 54px;
 }
-#newsletter-submit{
-    width: 234px;
-    height: 54px;
+
+#newsletter-submit {
+  width: 234px;
+  height: 54px;
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+
+@media (max-width: 1050px) {
+  .nav-links{
+    gap: 15px;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav-links{
+    gap: 5px;
+  }
+}
+
+@media (max-width: 917px) {
   .toggle-button {
     display: block;
   }
@@ -204,7 +231,8 @@ body {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 60px; /* Adjusted for fixed navbar */
+    top: 60px;
+    /* Adjusted for fixed navbar */
     left: 0;
     width: 100%;
     background: #f4f7fa;
@@ -218,7 +246,7 @@ body {
     padding: 10px 0;
   }
 
-  .toggle-checkbox:checked + .toggle-button + .nav-links {
+  .toggle-checkbox:checked+.toggle-button+.nav-links {
     display: flex;
   }
 }
