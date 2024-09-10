@@ -10,7 +10,6 @@
 
 body {
     font-family: 'ShadePro', sans-serif;
-    background-color: #F4F7FA;
     color: #333;
 }
 
@@ -21,11 +20,20 @@ body {
     align-items: center;
     padding: 15px 20px;
     background-color: #F4F7FA; /* Light background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     z-index: 1000;
+}
+
+.header-title {
+    background-color: #F4F7FA;
+    padding: 15px 20px;
+    font-size: 4em;
+}
+
+.red-text {
+    color: #E00400;
 }
 
 .logo {
