@@ -81,6 +81,64 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.contact-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-form{
+    
+}
+.contact-us{
+    border: solid black;
+    max-width: 320px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.contact-us input, #reason{
+    width: 272px;
+    height: 40px;
+}
+
+#more-info{
+    width: 272px;
+    height: 100px;
+}
+
+.submit-contact{
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter{
+    text-align: center;
+}
+
+.newsletter-form{
+    width: 502px;
+    height: 273px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#newsletter-input{
+    width: 500px;
+    height: 54px;
+}
+#newsletter-submit{
+    width: 234px;
+    height: 54px;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .toggle-button {

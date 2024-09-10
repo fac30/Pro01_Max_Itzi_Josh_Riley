@@ -23,11 +23,11 @@
             </ul>
         </nav>
         <div class="header-content"></div>
-            <h1 class="header-title">
-                We are<br>
-                <span class="red-text">Brainwave</span><br>
-                Bureau
-            </h1>
+        <h1 class="header-title">
+            We are<br>
+            <span class="red-text">Brainwave</span><br>
+            Bureau
+        </h1>
         </div>
     </header>
 
@@ -35,15 +35,13 @@
     <section id="about">About Us</section>
     <section id="events">Events</section>
     <section id="contact">Contact</section>
+
     <div class="contact-form">
-        <h3>Get In Touch</h3>
+        <h3 class="contact-header">Get In Touch</h3>
         <form class="contact-us" action="#" method="post" alt="contact form">
             <input type="text" id="name" name="name" placeholder="Name" required><br><br>
-
             <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-
-            <input type="text" id="company" name="company" placeholder="Company"><br><br>
-
+            <input type="text" id="company" name="company" placeholder="Company (Optional)"><br><br>
             <input type="tel" id="number" name="number" placeholder="Phone Number" required><br><br>
 
             <select id="reason" name="reason" required>
@@ -56,16 +54,19 @@
             <textarea id="more-info" name="more-info" rows="5" cols="30"
                 placeholder="Please provide some more information..." required></textarea><br><br>
 
-            <input type="submit" value="Submit">
+            <input class="submit-contact" type="submit" value="Submit">
         </form>
     </div>
 
-    <div class="newsletter-form">
+    <div class="newsletter">
         <h3>Stay Tuned For The Next Talks</h3>
-        <form class="contact-us" action="#" method="post" alt="newletter form">
-            <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
-            <input type="submit" value="Submit">
+        <form class="newsletter-form" action="#" method="post" alt="newletter form">
+            <input id="newsletter-input" type="text" id="email" name="email" placeholder="Enter your email"
+                required><br><br>
+            <input id="newsletter-submit" type="submit" value="Submit">
         </form>
+        <p>We’ll never share your details with third parties.
+            View our Privacy Policy for more info.</p>
     </div>
 
 
