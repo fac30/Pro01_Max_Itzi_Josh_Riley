@@ -28,16 +28,25 @@ body {
 
 /* Navbar styling */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background-color: #f4f7fa; /* Light background color */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #F4F7FA; /* Light background color */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-title {
+    background-color: #F4F7FA;
+    padding: 15px 20px;
+    font-size: 4em;
+}
+
+.red-text {
+    color: #E00400;
 }
 
 .logo {
