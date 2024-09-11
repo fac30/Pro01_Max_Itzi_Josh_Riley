@@ -1,0 +1,54 @@
+
+
+#about {
+    background-color: var(--background-light);
+    padding: 1rem 2rem;
+  }
+  
+  .team-story {
+    max-width: 1200px;
+  }
+  
+  .team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: auto;
+    margin: 2rem;
+  }
+  
+  .team-card {
+    background-color: var(--font-colour);
+    padding: 1.5rem;
+  
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: left;
+    max-width: 600px;
+    text-align: left;
+    color: var(--background-light);
+  
+    border: 1px solid #fff;
+    border-radius: 8px;
+  }
+  
+  .team-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+  }
+  
+  .team-card p {
+    margin: 0.5rem auto;
+  }
+  
+  .team-card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
