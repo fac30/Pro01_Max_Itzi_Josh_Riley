@@ -1,70 +1,78 @@
 /* Responsive styles */
 
 @media (max-width: 1177px) {
-    .nav-links {
-      gap: 15px;
-    }
-  
-    .header-image {
-      display: none;
-    }
+  .nav-links {
+    gap: 15px;
   }
-  
-  @media (max-width: 970px) {
-    .nav-links {
-      gap: 5px;
-    }
-  }
-  
-  @media (max-width: 917px) {
-    .toggle-button {
-      display: block;
-    }
-  
-    .header-title {
-      max-width: 100%;
-      text-align: center;
-      left: 1%;
-      top: 153px;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      top: 60px;
-      /* Adjusted for fixed navbar */
-      left: 0;
-      width: 100%;
-      background: #f4f7fa;
-      padding: 15px 0;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    }
-  
-    .nav-links li {
-      width: 100%;
-      text-align: center;
-      padding: 10px 0;
-    }
-  
-    .toggle-checkbox:checked + .toggle-button + .nav-links {
-      display: flex;
-    }
+}
 
-    .newsletter-form {
-        max-width: 90%;
-    }
+@media (max-width: 970px) {
+  .nav-links {
+    gap: 5px;
   }
-  
-  @media (max-width: 757px) {
-    .header-title {
-      font-size: 30px;
-    }
+
+}
+
+@media (max-width: 917px) {
+  .toggle-button {
+    display: block;
   }
-  
-  @media (max-width: 615px) {
-    .header-title {
-      font-size: 20px;
-    }
+
+
+  .header-title {
+    top: 153px;
+    font-size: 60px;
+    width: 100%;
   }
+
+  .red-text {
+    font-size: 60px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #f4f7fa;
+    padding: 15px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .toggle-checkbox:checked+.toggle-button+.nav-links {
+    display: flex;
+  }
+
+  .newsletter-form {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 757px) {
+  .header-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-title {
+    text-align: center;
+    left: 0;
+    margin: none;
+  }
+}
+
+@media (max-width: 615px) {}
