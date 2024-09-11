@@ -1,9 +1,9 @@
-@import url("navbar.css");
-@import url("contact-form.css");
-@import url("events-card.css");
-@import url("footer.css");
-@import url("media-queries.css");
-@import url("team-cards.css");
+@import url("./navbar.css");
+@import url("./contact-form.css");
+@import url("./event-cards.css");
+@import url("./footer.css");
+@import url("./media-queries.css");
+@import url("./team-cards.css");
 
 /* Import the ShadePro Black font */
 @import url("https://fonts.googleapis.com/css2?family=ShadePro:wght@900&display=swap");
@@ -91,3 +91,6 @@ body {
   margin: 0 auto;
   width: 70%;
 }
+
+@import url("./team-cards.css");
+
