@@ -1,6 +1,14 @@
-// Import the JSON file using require
-const eventsData = require('../data/events.json');
-const teamData = require('../data/team.json');
+// Function to fetch JSON data and create event cards
+async function fetchData(type) {
+    try {
+      // Fetch the JSON data
+      const response = await fetch(`../data/${type}.json`);
+      const eventsData = await response.json(); // Parse the JSON data
+      createCard(eventsData, type); // Call the function to create event cards
+    } catch (error) {
+      console.error('Error fetching events data:', error);
+    }
+  }
 
 /* to import different event and their data:
     events[event number(integer)]
@@ -19,25 +27,20 @@ const teamData = require('../data/team.json');
 */
 
 
-
-console.log(new Date(eventsData[5].date)); // This will log the date of the fifth event
-console.log(teamData[3].name); // This will log Max's name
-
-
 function createCard(data, type) {
     const container = document.querySelector(`.${type}-container`); // Select the container div
-  
+
     // Loop through the events data
     data.forEach(dataEntry => {
         // Create the card container
         const card = document.createElement('div');
-        card.className = `.${type}-card`;
-    
+        card.className = `${type}-card`;
+
         // Create and set the image element
         const img = document.createElement('img');
         img.src = dataEntry.img;
         img.alt = `Image of ${dataEntry.name}`;
-    
+
         // Create and set the title element
         const title = document.createElement('h3');
         title.textContent = dataEntry.title;
@@ -45,24 +48,32 @@ function createCard(data, type) {
         // Create and set the speaker name element
         const name = document.createElement('h2');
         name.textContent = dataEntry.name;
-            
+
         // Create and set the date & location element
+        let dateLocation;
+        let button;
+
         if (dataEntry.date) {
-            const dateLocation = document.createElement('h4');
-            dateLocation.textContent = new Date(dataEntry.date)
+            dateLocation = document.createElement('h5');
+            const eventDate = new Date(dataEntry.date);
+            const formattedDate = eventDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
+            dateLocation.textContent = `${formattedDate} - `;
+
             // Create and set the location link
             const locationUrl = document.createElement('a');
             locationUrl.href = dataEntry.locationUrl;
             locationUrl.textContent = dataEntry.location;
             locationUrl.target = '_blank'; // Open the link in a new tab
+
             // Append the location link to the dateLocation element
             dateLocation.appendChild(locationUrl);
+
             // Create and set the button element
-            const button = document.createElement('button');
+            button = document.createElement('button');
             button.className = `${type}-button`;
             button.textContent = 'Buy Tickets';
         }
-        
+
         // Create and set the description paragraph
         const description = document.createElement('p');
         description.textContent = dataEntry.description;
@@ -71,15 +82,18 @@ function createCard(data, type) {
         card.appendChild(img);
         card.appendChild(title);
         card.appendChild(name);
-        if (dataEntry.date) {
+        if (dateLocation) {
             card.appendChild(dateLocation);
         }
         card.appendChild(description);
-        card.appendChild(button);
+        if (button) {
+            card.appendChild(button);
+        }
 
         // Append the card to the container
         container.appendChild(card);
     });
 }
 
-createCard(eventsData, 'events');
+// Call the function to generate the event cards
+fetchData('events');
