@@ -340,8 +340,8 @@ body {
 }
 
 footer {
-  background-color: #333;
-  color: #08dafe;
+  background-color: var(--background-light);
+  color: var(--red-titles);
   padding: 20px 0;
   text-align: center;
   margin-top: 20px;
