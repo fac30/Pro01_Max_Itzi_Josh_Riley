@@ -32,28 +32,47 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #f4f7fa; /* Light background color */
+
+  background-color: var(--background-light);
+
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000;
+
 }
 
+.header-content {
+  background-color: var(--background-light);
+  height: 701px;
+}
+
+
 .header-title {
+
+  padding: 15px 20px;
+  font-size: 5em;
+  position: relative;
+  left: 17%;
+  top: 153px;
+}
+
+.red-text {
+  color: var(--red-titles)
+
   background-color: #f4f7fa;
   padding: 15px 20px;
   font-size: 4em;
 }
 
-.red-text {
-  color: #e00400;
-}
 
 .logo {
-  font-size: 1em;
+  font-size: 24px;
   font-weight: bold;
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
   letter-spacing: 1px;
+  margin-left: 10%;
 }
 
 /* Hide checkbox */
@@ -66,7 +85,8 @@ body {
   display: none;
   font-size: 1.8em;
   cursor: pointer;
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
 }
 
 /* Nav links styling */
@@ -75,10 +95,12 @@ body {
   display: flex;
   gap: 25px;
   transition: all 0.3s ease;
+  margin-right: 10%;
 }
 
 .nav-links li a {
-  color: #333333; /* Dark text color */
+  color: #333333;
+  /* Dark text color */
   text-decoration: none;
   padding: 8px 20px;
   font-size: 1.1em;
@@ -89,7 +111,8 @@ body {
 
 /* Hover effect for nav links */
 .nav-links li a:hover {
-  background-color: rgba(51, 51, 51, 0.1); /* Subtle hover effect */
+  background-color: rgba(51, 51, 51, 0.1);
+  /* Subtle hover effect */
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -154,8 +177,6 @@ body {
   margin-bottom: 50px;
 }
 
-.contact-form {
-}
 .contact-us {
   border: solid black;
   max-width: 320px;
@@ -202,74 +223,89 @@ body {
   width: 500px;
   height: 54px;
 }
+
 #newsletter-submit {
   width: 234px;
   height: 54px;
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+
+@media (max-width: 1050px) {
+  .nav-links{
+    gap: 15px;
+  }
+}
+
+@media (max-width: 970px) {
+  .nav-links{
+    gap: 5px;
+  }
+}
+
+@media (max-width: 917px) {
   .toggle-button {
     display: block;
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 60px; /* Adjusted for fixed navbar */
-    left: 0;
-    width: 100%;
-    background: #f4f7fa;
-    padding: 15px 0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  }
+.nav-links {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  /* Adjusted for fixed navbar */
+  left: 0;
+  width: 100%;
+  background: #f4f7fa;
+  padding: 15px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
 
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
+.nav-links li {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
 
-  .toggle-checkbox:checked + .toggle-button + .nav-links {
-    display: flex;
-  }
+.toggle-checkbox:checked+.toggle-button+.nav-links {
+  display: flex;
+}
 }
 
 
-       
-        footer {
-            background-color: #333; 
-            color: #08dafe; 
-            padding: 20px 0; 
-            text-align: center; 
-            margin-top: 20px;
-        }
 
-        
-        footer ul {
-            list-style: none; 
-            padding: 0;
-            margin: 20px 0; 
-            display: flex; 
-            justify-content: center; 
-            gap: 20px; 
-        }
+footer {
+    background-color: #333; 
+    color: #08dafe; 
+    padding: 20px 0; 
+    text-align: center; 
+    margin-top: 20px;
+}
 
-        
-        footer ul li {
-            display: inline; 
-        }
 
-        footer ul li a {
-            color: #fff; 
-            text-decoration: none; 
-            font-size: 24px; 
-            transition: color 0.3s; 
-        }
+footer ul {
+    list-style: none; 
+    padding: 0;
+    margin: 20px 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
 
-        
-        footer ul li a:hover {
-            color: #1da1f2; 
-            }
+
+footer ul li {
+    display: inline; 
+}
+
+footer ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 24px; 
+    transition: color 0.3s; 
+}
+
+
+footer ul li a:hover {
+    color: #1da1f2;
+}
