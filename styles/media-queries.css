@@ -68,3 +68,9 @@
       font-size: 20px;
     }
   }
+
+  @media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        height: auto;
+    }
