@@ -226,6 +226,10 @@ body {
 }
 
 .about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
   padding-left: 1rem;
 }
 
@@ -239,7 +243,7 @@ body {
 }
 
 .contact-form {
-  /* background-color: var(--background-light); */
+  background-color: var(--background-light);
   padding: 25px;
 }
 
