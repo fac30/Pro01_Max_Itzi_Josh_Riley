@@ -44,22 +44,21 @@ body {
   height: 701px;
 }
 
-
 .header-title {
-  font-size: 37px ;
+  font-size: 37px;
   padding: 15px 20px;
   position: relative;
   left: 15%;
   top: 153px;
 }
 
-.header-tagline{
+.header-tagline {
   font-size: 0.5em;
   opacity: 0.7;
-  font-style: italic ;
+  font-style: italic;
 }
 
-.header-image{
+.header-image {
   float: right;
   position: relative;
   right: 10%;
@@ -73,7 +72,6 @@ body {
   position: relative;
   right: 10px;
 }
-
 
 .logo {
   font-size: 24px;
@@ -124,6 +122,15 @@ body {
   /* Subtle hover effect */
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  /* font-family: Roboto, sans-serif; */
+  font-size: medium;
+  color: var(--red-titles);
+  padding: 2rem;
 }
 
 .events-container {
@@ -262,17 +269,17 @@ body {
 /* Responsive styles */
 
 @media (max-width: 1177px) {
-  .nav-links{
+  .nav-links {
     gap: 15px;
   }
 
-  .header-image{
+  .header-image {
     display: none;
   }
 }
 
 @media (max-width: 970px) {
-  .nav-links{
+  .nav-links {
     gap: 5px;
   }
 }
@@ -302,65 +309,62 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   }
 
-.nav-links li {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 
-  .toggle-checkbox:checked+.toggle-button+.nav-links {
+  .toggle-checkbox:checked + .toggle-button + .nav-links {
     display: flex;
   }
 }
 
-@media (max-width: 757px){
-  .header-title{
-    font-size:30px;
+@media (max-width: 757px) {
+  .header-title {
+    font-size: 30px;
   }
 }
 
-@media (max-width: 615px){
-  .header-title{
+@media (max-width: 615px) {
+  .header-title {
     font-size: 20px;
   }
 }
+
 
 .newsletter-form{
   max-width: 90%;
 }
 
-
 footer {
-    background-color: #333; 
-    color: #08dafe; 
-    padding: 20px 0; 
-    text-align: center; 
-    margin-top: 20px;
+  background-color: #333;
+  color: #08dafe;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
 }
-
 
 footer ul {
-    list-style: none; 
-    padding: 0;
-    margin: 20px 0; 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-
 footer ul li {
-    display: inline; 
+  display: inline;
 }
 
 footer ul li a {
-    color: #fff; 
-    text-decoration: none; 
-    font-size: 24px; 
-    transition: color 0.3s; 
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  transition: color 0.3s;
 }
 
-
 footer ul li a:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
