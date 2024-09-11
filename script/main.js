@@ -26,8 +26,8 @@ async function fetchData(type) {
         .description: description about team member
 */
 
-
 function createCard(data, type) {
+    const isEvent = (type === "events")
     const container = document.querySelector(`.${type}-container`); // Select the container div
 
     // Loop through the events data
@@ -52,8 +52,9 @@ function createCard(data, type) {
         // Create and set the date & location element
         let dateLocation;
         let button;
+        let descriptionDiv;
 
-        if (dataEntry.date) {
+        if (isEvent) {
             dateLocation = document.createElement('h5');
             const eventDate = new Date(dataEntry.date);
             const formattedDate = eventDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
@@ -72,6 +73,9 @@ function createCard(data, type) {
             button = document.createElement('button');
             button.className = `${type}-button`;
             button.textContent = 'Buy Tickets';
+        } else {
+            descriptionDiv = document.createElement('div');
+            descriptionDiv.className = `${type}-description`;
         }
 
         // Create and set the description paragraph
@@ -80,14 +84,17 @@ function createCard(data, type) {
 
         // Append all created elements to the card container
         card.appendChild(img);
-        card.appendChild(title);
-        card.appendChild(name);
-        if (dateLocation) {
+        if (isEvent) {
+            card.appendChild(title);
+            card.appendChild(name);
             card.appendChild(dateLocation);
-        }
-        card.appendChild(description);
-        if (button) {
+            card.appendChild(description);
             card.appendChild(button);
+        } else {
+            descriptionDiv.appendChild(title);
+            descriptionDiv.appendChild(name);
+            descriptionDiv.appendChild(description);
+            card.appendChild(descriptionDiv);
         }
 
         // Append the card to the container
@@ -97,3 +104,4 @@ function createCard(data, type) {
 
 // Call the function to generate the event cards
 fetchData('events');
+fetchData('team');

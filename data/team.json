@@ -1,27 +1,27 @@
 [{
     "id": "TEAM-001",
-    "img": "image/itzi.jpg",
+    "img": "images/itzi.jpg",
     "title": "Co-Founder and COO",
     "name": "Itziar Cantero",
     "description": "Itzi is one of our co-founders and Chief Operations Officer."
 },
 {
     "id": "TEAM-002",
-    "img": "image/josh.jpg",
+    "img": "images/josh.jpg",
     "title": "Co-Founder and CEO",
     "name": "Joshua Dixon",
     "description": "Josh is one of our co-founders and Chief Executive Officer."
 },
 {
     "id": "TEAM-003",
-    "img": "image/riley.jpg",
+    "img": "images/riley.jpg",
     "title": "Co-Founder and CFO",
     "name": "Riley O'Dwyer",
     "description": "Riley is one of our co-founders and Chief Finance Officer."
 },
 {
     "id": "TEAM-004",
-    "img": "image/max.jpg",
+    "img": "images/max.jpg",
     "title": "Co-Founder and CTO",
     "name": "Maxime Downe",
     "description": "Max is one of our co-founders and Chief Technology Officer."
