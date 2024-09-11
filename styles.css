@@ -9,9 +9,9 @@
 }
 
 :root {
-  --pink-color: #adbae3;
+  --pink-color: #ffb6e7;
   --lilac-color: #c8d1ef;
-  --beige-color: #e0d2a9;
+  --beige-color: #f1e0bf;
   --red-titles: #b80003;
 
   --background-light: #f4f7fa;
@@ -186,6 +186,55 @@ body {
   min-height: 25px;
   min-width: 100px;
   margin-top: 0.5rem;
+}
+
+#about {
+  background-color: var(--background-light);
+  padding: 3rem 1rem;
+}
+
+.about-story {
+  max-width: 1200px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: auto;
+  margin: 2rem;
+}
+
+.about-card {
+  background-color: var(--font-colour);
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: left;
+  max-width: 600px;
+  text-align: left;
+  color: var(--background-light);
+
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.about-description {
+  padding-left: 1rem;
+}
+
+.about-card p {
+  margin: 0.5rem auto;
+}
+
+.about-card img {
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .contact-header {
