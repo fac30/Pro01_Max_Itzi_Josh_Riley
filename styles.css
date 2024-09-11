@@ -229,6 +229,7 @@ body {
   border-radius: 5px;
   background-color: var(--font-colour);
   color: var(--background-white);
+  cursor: pointer;
 }
 
 .newsletter {
@@ -265,6 +266,7 @@ body {
   font-weight: bold;
   border: #161c2d;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Responsive styles */
