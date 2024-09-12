@@ -168,6 +168,7 @@ body {
   padding: 2rem 1rem;
   max-width: var(--max-width);
   margin: auto;
+  padding: 50px 100px;
 }
 
 .section-title {
