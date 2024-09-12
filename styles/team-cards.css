@@ -5,11 +5,11 @@
     padding: 1rem 2rem;
   }
   
-  .team-story {
+.team-story {
     max-width: 1200px;
-  }
-  
-  .team-container {
+}
+
+.team-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,12 +17,12 @@
     justify-content: center;
     max-width: auto;
     margin: 2rem;
-  }
-  
-  .team-card {
+}
+
+.team-card {
     background-color: var(--font-colour);
     padding: 1.5rem;
-  
+
     display: flex;
     flex-direction: row;
     gap: 0.3rem;
@@ -31,24 +31,47 @@
     max-width: 600px;
     text-align: left;
     color: var(--background-light);
-  
+
     border: 1px solid #fff;
     border-radius: 8px;
-  }
-  
-  .team-description {
+}
+
+
+.team-title {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.team-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-date {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.team-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.team-descriptionDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
     padding-left: 1rem;
-  }
-  
-  .team-card p {
+}
+
+.team-card p {
     margin: 0.5rem auto;
-  }
-  
-  .team-card img {
+}
+
+.team-card img {
     max-height: 200px;
     object-fit: cover;
-  }
+}

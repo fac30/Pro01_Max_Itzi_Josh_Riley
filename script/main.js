@@ -43,10 +43,12 @@ function createCard(data, type) {
 
         // Create and set the title element
         const title = document.createElement('h3');
+        title.className = `${type}-title`;
         title.textContent = dataEntry.title;
 
         // Create and set the speaker name element
         const name = document.createElement('h2');
+        name.className = `${type}-name`;
         name.textContent = dataEntry.name;
 
         // Create and set the date & location element
@@ -55,7 +57,8 @@ function createCard(data, type) {
         let descriptionDiv;
 
         if (isEvent) {
-            dateLocation = document.createElement('h5');
+            dateLocation = document.createElement('h4');
+            dateLocation.className = `${type}-date`;
             const eventDate = new Date(dataEntry.date);
             const formattedDate = eventDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' });
             dateLocation.textContent = `${formattedDate} - `;
@@ -75,11 +78,12 @@ function createCard(data, type) {
             button.textContent = 'Buy Tickets';
         } else {
             descriptionDiv = document.createElement('div');
-            descriptionDiv.className = `${type}-description`;
+            descriptionDiv.className = `${type}-descriptionDiv`;
         }
 
         // Create and set the description paragraph
         const description = document.createElement('p');
+        description.className = `${type}-description`;
         description.textContent = dataEntry.description;
 
         // Append all created elements to the card container
