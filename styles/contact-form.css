@@ -1,5 +1,5 @@
 .contact-form {
-    background-color: var(--background-light);
+    background-color: var(--background-white);
     padding: 25px;
   }
   
@@ -9,7 +9,7 @@
   }
   
   .contact-us {
-    border: solid var(--background-white);
+    border: solid var(--lilac-color);
     border-radius: 15px;
     max-width: 320px;
     text-align: center;
@@ -43,8 +43,9 @@
   }
   
   .newsletter {
+    background-color: var(--background-light);
     text-align: center;
-    padding: 100px;
+    padding: 40px;
   }
   
   .newsletter-form {
