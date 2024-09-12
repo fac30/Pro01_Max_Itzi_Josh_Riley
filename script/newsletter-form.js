@@ -1,11 +1,15 @@
 document.querySelector('.newsletter-form').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+  event.preventDefault(); // Prevent the default form submission behavior
 
-    const newsletterEmail = document.getElementById('newsletter-input').value;
+  // Get the value of the email input field
+  const newsletterEmail = document.getElementById('newsletter-input').value;
 
-    localStorage.setItem('newsletterEmail', newsletterEmail);
+  // Store the email address in local storage
+  localStorage.setItem('newsletterEmail', newsletterEmail);
 
-    alert('Thank you for subscribing!');
+  // Show an alert to the user confirming their subscription
+  alert('Thank you for subscribing!');
 
-    this.reset();
-  });
+  // Reset the form after submission
+  this.reset();
+});
