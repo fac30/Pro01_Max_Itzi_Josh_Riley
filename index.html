@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
   <header>
     <nav class="navbar">
       <div class="logo">The Brainwave Bureau</div>
@@ -40,14 +41,16 @@
       " alt="">
     </div>
   </header>
-  <section id="home">
-    <h2 class="section-title">Welcome to The Brainwave Bureau</h2>
+
+  <section class="section-home" id="home">
+    <div class="section-container">
+      <h2 class="section-title">Welcome to The Brainwave Bureau</h2>
     
-    <div class="home-container">
-        <img src="./images/home-illustration.svg" alt="illustration of a cultured person">
-        <p class="paragraphs">At The Brainwave Bureau, we bring you closer to the brightest minds and industry experts from around the world. Our agency is dedicated to organizing engaging talks, thought-provoking discussions, and inspiring events that connect you with leaders in their fields. From tech visionaries to creative storytellers, our curated sessions offer a unique opportunity to learn, grow, and spark new ideas. Join us and be a part of conversations that matter – because at The Brainwave Bureau, we believe in the power of sharing knowledge.</p>
+      <div class="home-container">
+          <img src="./images/home-illustration.svg" alt="illustration of a cultured person">
+          <p class="paragraphs">At The Brainwave Bureau, we bring you closer to the brightest minds and industry experts from around the world. Our agency is dedicated to organizing engaging talks, thought-provoking discussions, and inspiring events that connect you with leaders in their fields. From tech visionaries to creative storytellers, our curated sessions offer a unique opportunity to learn, grow, and spark new ideas. Join us and be a part of conversations that matter – because at The Brainwave Bureau, we believe in the power of sharing knowledge.</p>
+      </div>
     </div>
-    
   </section>
     <section id="events">
       <h2 class="section-title">Events</h2>
@@ -56,8 +59,9 @@
       </div>
     </div>
   </section>
-  <section id="about">
-    <section id="about">
+
+  <section class="section-about" id="about">
+    <div class="section-container">
       <h2 class="section-title">About Us</h2>
       
       <p class="about-story">The Brainwave Bureau began as an unexpected meeting of minds, each with a unique story and a shared passion for bringing people together through the power of ideas.</p>
@@ -71,49 +75,53 @@
       <div class="team-container">
          <!-- Team cards will be dynamically generated here by JavaScript -->
       </div>
-    </section>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact-form">
-      <h3 class="contact-header">Get In Touch</h3>
-      <form class="contact-us" action="#" method="post" alt="contact form">
-        <input type="text" id="name" name="name" placeholder="Name" required><br><br>
-        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
-        <input type="text" id="company" name="company" placeholder="Company (Optional)"><br><br>
-        <input type="tel" id="number" name="number" placeholder="Phone Number" required><br><br>
-
-        <select id="reason" name="reason" required>
-          <option value="" disabled selected>Reason for Contacting</option>
-          <option value="general-enquiries">General Enquiries</option>
-          <option value="speaking-question">Question about Speaking</option>
-          <option value="attending-question">Question about Attending</option>
-        </select><br><br>
-        <textarea id="more-info" name="more-info" rows="5" cols="30"
-          placeholder="Please provide some more information..." required></textarea><br><br>
-
-        <input id="submit-contact" type="submit" value="Submit">
-      </form>
     </div>
   </section>
 
-  <section>
-    <h2 class="section-title">Sign Up</h2>
-    <div class="newsletter">
-      <h3>Stay Tuned For The Next Talks</h3>
-      <form class="newsletter-form" action="#" method="post" alt="newletter form">
-        <input id="newsletter-input" type="text" id="email" name="email" placeholder="Enter your email"
-          required><br><br>
-        <input id="newsletter-submit" type="submit" value="Submit">
-      </form>
-      <p>We’ll never share your details with third parties.
-        View our Privacy Policy for more info.</p>
+  <section class="section-contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-form">
+        <h3 class="contact-header">Get In Touch</h3>
+        <form class="contact-us" action="#" method="post" alt="contact form">
+          <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+          <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+          <input type="text" id="company" name="company" placeholder="Company (Optional)"><br><br>
+          <input type="tel" id="number" name="number" placeholder="Phone Number" required><br><br>
+
+          <select id="reason" name="reason" required>
+            <option value="" disabled selected>Reason for Contacting</option>
+            <option value="general-enquiries">General Enquiries</option>
+            <option value="speaking-question">Question about Speaking</option>
+            <option value="attending-question">Question about Attending</option>
+          </select><br><br>
+          <textarea id="more-info" name="more-info" rows="5" cols="30"
+            placeholder="Please provide some more information..." required></textarea><br><br>
+
+          <input id="submit-contact" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-signup" id="sign up">
+    <div class="section-container">
+      <h2 class="section-title">Sign Up</h2>
+      <div class="newsletter">
+        <h3>Stay Tuned For The Next Talks</h3>
+        <form class="newsletter-form" action="#" method="post" alt="newletter form">
+          <input id="newsletter-input" type="text" id="email" name="email" placeholder="Enter your email"
+            required><br><br>
+          <input id="newsletter-submit" type="submit" value="Submit">
+        </form>
+        <p>We’ll never share your details with third parties.
+          View our Privacy Policy for more info.</p>
+      </div>
     </div>
 </section>
 
 <footer>
-<p>Follow us on social media</p>
+  <p>Follow us on social media</p>
   <ul>
       <li>
           <i class="ri-twitter-x-line"></i>

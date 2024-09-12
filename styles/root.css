@@ -152,10 +152,22 @@ table {
   --font-colour: #161c2d;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "ShadePro", sans-serif;
   background-color: var(--background-white);
   color: var(--font-colour);
+}
+
+.section-container {
+  padding: 2rem 1rem;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 .section-title {
