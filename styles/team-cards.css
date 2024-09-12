@@ -1,6 +1,9 @@
-
+.about-story {
+  margin-top: 0.8rem;
+}
 
 #about {
+
     background-color: var(--background-light);
     padding: 1rem 2rem;
   }
