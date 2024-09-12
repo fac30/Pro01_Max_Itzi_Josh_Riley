@@ -15,65 +15,83 @@
 }
 
 .contact-form {
-  background-color: var(--background-light);
-  padding: 25px;
-}
 
-.contact-us input,
-#reason,
-#more-info {
-  width: 272px;
-  height: 40px;
-  border: solid var(--lilac-color);
-  border-radius: 10px;
-  padding: 5px;
-}
-
-#more-info {
-  width: 272px;
-  height: 100px;
-}
-
-#submit-contact {
-  border: var(--font-colour);
-  border-radius: 5px;
-  background-color: var(--font-colour);
-  color: var(--background-white);
-  cursor: pointer;
-}
-
-.newsletter {
-  text-align: center;
-  /* padding: 100px; */
-}
-
-.newsletter-form {
-  width: 502px;
-  height: 273px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  height: 100px;
-}
-
-#newsletter-input {
-  width: 500px;
-  height: 54px;
-  border-radius: 12px;
-  border: solid 1px var(--background-light);
-  padding: 10px;
-}
-
-#newsletter-submit {
-  width: 234px;
-  height: 54px;
-  background-color: var(--font-colour);
-  color: var(--background-white);
-  font-weight: bold;
-  border: #161c2d;
-  border-radius: 5px;
-  cursor: pointer;
-}
+    background-color: var(--background-white);
+    padding: 25px;
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-us {
+    border: solid var(--lilac-color);
+    border-radius: 15px;
+    max-width: 320px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  
+  .contact-us input,
+  #reason,
+  #more-info {
+    width: 272px;
+    height: 40px;
+    border: solid var(--lilac-color);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+  #more-info {
+    width: 272px;
+    height: 100px;
+  }
+  
+  #submit-contact {
+    border: var(--font-colour);
+    border-radius: 5px;
+    background-color: var(--font-colour);
+    color: var(--background-white);
+    cursor: pointer;
+  }
+  
+  .newsletter {
+    background-color: var(--background-light);
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .newsletter-form {
+    width: 502px;
+    height: 273px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  
+  #newsletter-input {
+    width: 500px;
+    height: 54px;
+    border-radius: 12px;
+    border: solid 1px var(--background-light);
+    padding: 10px;
+  }
+  
+  #newsletter-submit {
+    width: 234px;
+    height: 54px;
+    background-color: var(--font-colour);
+    color: var(--background-white);
+    font-weight: bold;
+    border: #161c2d;
+    border-radius: 5px;
+    cursor: pointer;
+  }
