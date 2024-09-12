@@ -1,7 +1,7 @@
 footer {
     background-color: var(--background-light);
     color: var(--red-titles);
-    height: 150px;
+    height: 160px;
     padding: 30px 0;
     text-align: center;
     margin-top: 30px;
@@ -26,5 +26,14 @@ footer {
     font-size: 42px;
     transition: color 0.3s;
   }
-  
+
+  footer i{
+  font-size: 23px;
+  }
+
+  footer p{
+    color: black;
+    font-size: 14px;
+    margin: 25px;
+  }
   
