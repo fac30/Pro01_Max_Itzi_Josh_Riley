@@ -1,27 +1,27 @@
 [{
     "id": "TEAM-001",
-    "img": "./images/itzi.jpg",
+    "img": "./images/itzi.JPG",
     "title": "Co-Founder and COO",
     "name": "Itziar Cantero",
     "description": "With a background in textiles, crafts, and logistics, Itzi combines creativity with organizational finesse. As COO, she ensures every event is seamlessly orchestrated, bringing her love for craftsmanship and her logistical expertise to the heart of The Brainwave Bureau."
 },
 {
     "id": "TEAM-002",
-    "img": "./images/josh.jpg",
+    "img": "./images/josh.JPG",
     "title": "Co-Founder and CEO",
     "name": "Joshua Dixon",
     "description": "An avid traveler with a passion for new cultures and experiences, Josh leads The Brainwave Bureau with a global perspective and an adventurous spirit. His vision is to connect diverse minds and foster knowledge exchange across industries and borders."
 },
 {
     "id": "TEAM-003",
-    "img": "./images/riley.jpg",
+    "img": "./images/riley.JPG",
     "title": "Co-Founder and CFO",
     "name": "Riley O'Dwyer",
     "description": "A world-class football coach turned financial strategist, Riley brings his skills in team-building and leadership to The Brainwave Bureau. As CFO, he ensures our operations run like a championship-winning team, always aiming for excellence."
 },
 {
     "id": "TEAM-004",
-    "img": "./images/max.jpg",
+    "img": "./images/max.JPG",
     "title": "Co-Founder and CTO",
     "name": "Maxime Downe",
     "description": "An architect and computational designer, Max is the creative brain behind our technology and experiences. As CTO, he leverages his passion for innovation and design to build dynamic, memorable events that inspire and engage."
