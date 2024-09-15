@@ -2,7 +2,7 @@
 async function fetchData(type) {
   try {
     // Fetch the JSON data
-    const response = await fetch(`/data/${type}.json`);
+    const response = await fetch(`./data/${type}.json`);
     const eventsData = await response.json(); // Parse the JSON data
     createCard(eventsData, type); // Call the function to create event cards
   } catch (error) {
